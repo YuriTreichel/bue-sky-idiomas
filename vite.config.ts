@@ -8,6 +8,9 @@ export default defineConfig(({mode}) => {
   return {
     base: './', // Adicionado para compatibilidade com GitHub Pages
     plugins: [react(), tailwindcss()],
+    build: {
+      outDir: 'docs',
+    },
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },

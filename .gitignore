@@ -1,3 +1,5 @@
+dist/
+# docs/ não deve estar aqui para ser enviada ao GitHub
 node_modules/
 build/
 coverage/

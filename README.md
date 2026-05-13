@@ -1,7 +1,5 @@
 # Blue Sky Idiomas - Website Oficial
 
-![Blue Sky Idiomas](https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)
-
 Este repositório contém o código-fonte do novo website da **Blue Sky Idiomas**, uma escola de idiomas com mais de 25 anos de tradição em Porto Alegre, especializada em ensino personalizado e focado em resultados.
 
 ## 🚀 Sobre o Projeto

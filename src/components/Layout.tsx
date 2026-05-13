@@ -19,7 +19,7 @@ const Logo = ({ className = "h-12 w-auto" }: { className?: string }) => {
 
   return (
     <img 
-      src="/images/logo.png" 
+      src={`${import.meta.env.BASE_URL}images/logo.png`} 
       alt="Blue Sky Idiomas" 
       className={className} 
       onError={() => setError(true)} 

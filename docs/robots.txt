@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yuritreichel.github.io/bue-sky-idiomas/sitemap.xml

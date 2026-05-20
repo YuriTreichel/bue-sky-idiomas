@@ -52,29 +52,15 @@ const professors = [
     language: 'Francês',
     flag: 'https://flagcdn.com/fr.svg',
   },
-  {
-    name: 'Daniel Piepoli',
-    role: 'Professor de Espanhol',
-    image: 'https://www.blueskyidiomas.com.br/wp-content/uploads/sites/218/2019/01/24a330b0-1ab8-488b-bbdc-bc20f268c7fe-1030x1030.jpg',
-    bio: 'Natural da Venezuela. Maestro de Orquestra Sinfônica e especialista em Relações Internacionais. Falante nativo de espanhol.',
-    language: 'Espanhol',
-    flag: 'https://flagcdn.com/es.svg',
-  },
-  {
-    name: 'Susana Serrano',
-    role: 'Professora de Espanhol',
-    image: 'https://www.blueskyidiomas.com.br/wp-content/uploads/sites/218/2014/08/medium_100-8762-300x300.jpg',
-    bio: 'Nativa do Uruguai, graduada em Odontologia e pós-graduada em Metodologia do Ensino Superior. Atua no ensino desde 1995.',
-    language: 'Espanhol',
-    flag: 'https://flagcdn.com/es.svg',
-  },
 ];
 
 export default function Professors() {
   return (
     <>
-      <section className="pt-32 pb-20 lg:pt-48 lg:pb-32 bg-slate-50 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-primary-100/50 via-transparent to-transparent"></div>
+      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-primary-50 to-zh-light opacity-90 z-0"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-primary-200/40 rounded-full blur-[100px] z-0"></div>
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-zh-primary/10 rounded-full blur-[100px] z-0"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}

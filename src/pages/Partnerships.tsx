@@ -30,9 +30,9 @@ export default function Partnerships() {
 
   return (
     <>
-      <section className="pt-32 pb-20 lg:pt-48 lg:pb-32 bg-slate-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/40 to-transparent"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-600/10 rounded-full blur-[120px] -z-0"></div>
+      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-primary-50 to-es-light opacity-90 z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-300/20 rounded-full blur-[120px] z-0"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -44,15 +44,15 @@ export default function Partnerships() {
               <motion.div 
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-primary-300 border border-white/10 text-sm font-medium mb-6 backdrop-blur-md"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-100 text-primary-700 border border-primary-200 text-sm font-medium mb-6 backdrop-blur-md"
               >
                 <Handshake className="w-4 h-4" />
                 Programa de Convênios Blue Sky
               </motion.div>
-              <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-                Fortaleça sua equipe com <span className="text-primary-400">benefícios de ensino.</span>
+              <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
+                Fortaleça sua equipe com <span className="text-primary-600">benefícios de ensino.</span>
               </h1>
-              <p className="text-lg md:text-xl text-slate-300 font-inter mb-10 max-w-lg">
+              <p className="text-lg md:text-xl text-slate-600 font-inter mb-10 max-w-lg">
                 Oferecemos condições especiais para empresas, associações e sindicatos que desejam investir no futuro de seus membros.
               </p>
               <Link to="/contato">
@@ -69,8 +69,8 @@ export default function Partnerships() {
               className="relative hidden lg:block"
             >
               <img 
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt="Parceria" 
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                alt="Nova York, EUA (Inglês) - Parcerias de Negócios" 
                 className="rounded-3xl shadow-2xl border border-white/10"
                 referrerPolicy="no-referrer"
               />

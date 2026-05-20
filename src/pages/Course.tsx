@@ -8,8 +8,11 @@ const coursesData: Record<string, any> = {
   ingles: {
     name: 'Inglês',
     flag: 'https://flagcdn.com/us.svg',
-    color: 'from-blue-600 to-blue-400',
-    bg: 'bg-blue-50',
+    color: 'from-en-primary to-en-secondary',
+    bg: 'bg-en-light',
+    buttonColor: 'bg-en-primary hover:bg-en-secondary',
+    iconColor: 'text-en-primary',
+    tagBg: 'bg-en-light text-en-primary',
     desc: 'O idioma global dos negócios, viagens e tecnologia. Domine o inglês e abra portas em qualquer lugar do mundo.',
     levels: ['Iniciante (A1-A2)', 'Intermediário (B1-B2)', 'Avançado (C1-C2)', 'Business English'],
     features: [
@@ -17,27 +20,37 @@ const coursesData: Record<string, any> = {
       'Preparação para TOEFL e IELTS',
       'Material didático atualizado anualmente',
       'Professores com vivência internacional'
-    ]
+    ],
+    cityImage: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    cityName: 'Nova York, EUA (Inglês)'
   },
   espanhol: {
     name: 'Espanhol',
     flag: 'https://flagcdn.com/es.svg',
-    color: 'from-orange-600 to-orange-400',
-    bg: 'bg-orange-50',
-    desc: 'Conecte-se com toda a América Latina e Espanha. O segundo idioma mais falado no mundo dos negócios.',
+    color: 'from-es-primary to-es-secondary',
+    bg: 'bg-es-light',
+    buttonColor: 'bg-es-primary hover:bg-es-secondary',
+    iconColor: 'text-es-primary',
+    tagBg: 'bg-es-light text-es-primary',
+    desc: 'Conecte-se com toda a América Latina e Espanha. O segundo idioma mais falado no mundo como língua estrangeira.',
     levels: ['Básico (A1-A2)', 'Intermediário (B1-B2)', 'Avançado (C1-C2)', 'Espanhol para Negócios'],
     features: [
       'Imersão cultural hispânica',
       'Preparação para o exame DELE',
       'Foco nas variações regionais do idioma',
       'Aulas dinâmicas com música e literatura'
-    ]
+    ],
+    cityImage: 'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    cityName: 'Sevilha, Espanha (Espanhol)'
   },
   mandarim: {
     name: 'Mandarim',
     flag: 'https://flagcdn.com/cn.svg',
-    color: 'from-red-600 to-red-400',
-    bg: 'bg-red-50',
+    color: 'from-zh-primary to-zh-secondary',
+    bg: 'bg-zh-light',
+    buttonColor: 'bg-zh-primary hover:bg-zh-secondary',
+    iconColor: 'text-zh-primary',
+    tagBg: 'bg-zh-light text-zh-primary',
     desc: 'O idioma do futuro e da inovação. Destaque-se no mercado de trabalho com o idioma que mais cresce no mundo corporativo.',
     levels: ['Iniciante (HSK 1-2)', 'Intermediário (HSK 3-4)', 'Avançado (HSK 5-6)'],
     features: [
@@ -45,13 +58,18 @@ const coursesData: Record<string, any> = {
       'Foco em Pinyin e tons',
       'Preparação oficial para exames HSK',
       'Cultura e etiqueta de negócios chinesa'
-    ]
+    ],
+    cityImage: 'https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    cityName: 'Pequim, China (Mandarim)'
   },
   alemao: {
     name: 'Alemão',
     flag: 'https://flagcdn.com/de.svg',
-    color: 'from-yellow-600 to-yellow-400',
-    bg: 'bg-yellow-50',
+    color: 'from-de-primary to-de-secondary',
+    bg: 'bg-de-light',
+    buttonColor: 'bg-de-primary hover:bg-de-secondary',
+    iconColor: 'text-de-primary',
+    tagBg: 'bg-de-light text-de-primary',
     desc: 'Abra portas na engenharia, tecnologia e ciências. O idioma da maior economia da Europa.',
     levels: ['Iniciante (A1-A2)', 'Intermediário (B1-B2)', 'Avançado (C1-C2)'],
     features: [
@@ -59,13 +77,18 @@ const coursesData: Record<string, any> = {
       'Preparação para Goethe-Zertifikat',
       'Vocabulário técnico e acadêmico',
       'Apoio para intercâmbio na Alemanha'
-    ]
+    ],
+    cityImage: 'https://images.unsplash.com/photo-1599946347371-68eb71b16afc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    cityName: 'Berlim, Alemanha (Alemão)'
   },
   frances: {
     name: 'Francês',
     flag: 'https://flagcdn.com/fr.svg',
-    color: 'from-purple-600 to-purple-400',
-    bg: 'bg-purple-50',
+    color: 'from-fr-primary to-fr-secondary',
+    bg: 'bg-fr-light',
+    buttonColor: 'bg-fr-primary hover:bg-fr-secondary',
+    iconColor: 'text-fr-primary',
+    tagBg: 'bg-fr-light text-fr-primary',
     desc: 'Cultura, diplomacia e elegância. Um idioma essencial para relações internacionais, gastronomia e artes.',
     levels: ['Iniciante (A1-A2)', 'Intermediário (B1-B2)', 'Avançado (C1-C2)'],
     features: [
@@ -73,7 +96,9 @@ const coursesData: Record<string, any> = {
       'Preparação para DELF/DALF',
       'Imersão na cultura francófona',
       'Francês para turismo e hotelaria'
-    ]
+    ],
+    cityImage: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    cityName: 'Paris, França (Francês)'
   }
 };
 
@@ -118,21 +143,24 @@ export default function Course() {
               
               <div className="flex flex-wrap gap-4 mb-10">
                 <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm text-sm font-medium text-slate-700">
-                  <Clock className="w-4 h-4 text-primary-600" /> 2h semanais
+                  <Clock className={`w-4 h-4 ${course.iconColor}`} /> 2h semanais
                 </div>
                 <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm text-sm font-medium text-slate-700">
-                  <Users className="w-4 h-4 text-primary-600" /> Máx. 6 alunos
+                  <Users className={`w-4 h-4 ${course.iconColor}`} /> Aulas Individuais & em Grupo
                 </div>
                 <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm text-sm font-medium text-slate-700">
-                  <Award className="w-4 h-4 text-primary-600" /> Certificado
+                  <Users className={`w-4 h-4 ${course.iconColor}`} /> Grupos Reduzidos (Máx. 6 alunos)
+                </div>
+                <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm text-sm font-medium text-slate-700">
+                  <Award className={`w-4 h-4 ${course.iconColor}`} /> Certificado
                 </div>
               </div>
 
-              <Link to="/contato">
+              <Link to="/contato" className="inline-block">
                 <motion.button 
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-full text-base font-semibold transition-all shadow-xl flex items-center justify-center gap-2"
+                  className={`${course.buttonColor} text-white px-8 py-4 rounded-full text-base font-semibold transition-all shadow-xl flex items-center justify-center gap-2`}
                 >
                   Matricule-se agora
                   <ArrowRight className="w-4 h-4" />
@@ -147,8 +175,8 @@ export default function Course() {
               className="relative"
             >
               <img 
-                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt={`Aula de ${course.name}`} 
+                src={course.cityImage} 
+                alt={course.cityName} 
                 className="rounded-3xl shadow-2xl object-cover h-[400px] w-full"
                 referrerPolicy="no-referrer"
               />
@@ -167,12 +195,12 @@ export default function Course() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl font-bold text-slate-900 mb-8 flex items-center gap-3">
-                <BookOpen className="w-8 h-8 text-primary-600" /> O que você vai aprender
+                <BookOpen className={`w-8 h-8 ${course.iconColor}`} /> O que você vai aprender
               </h2>
               <ul className="space-y-6">
                 {course.features.map((feature: string, idx: number) => (
                   <li key={idx} className="flex items-start gap-4">
-                    <CheckCircle2 className="w-6 h-6 text-green-500 shrink-0 mt-0.5" />
+                    <CheckCircle2 className={`w-6 h-6 ${course.iconColor} shrink-0 mt-0.5`} />
                     <span className="text-lg text-slate-700 font-inter">{feature}</span>
                   </li>
                 ))}
@@ -191,7 +219,7 @@ export default function Course() {
                 {course.levels.map((level: string, idx: number) => (
                   <div key={idx} className="bg-white p-4 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between">
                     <span className="font-bold text-slate-800">{level}</span>
-                    <span className="text-sm font-medium text-primary-600 bg-primary-50 px-3 py-1 rounded-full">Disponível</span>
+                    <span className={`text-sm font-medium px-3 py-1 rounded-full ${course.tagBg}`}>Disponível</span>
                   </div>
                 ))}
               </div>

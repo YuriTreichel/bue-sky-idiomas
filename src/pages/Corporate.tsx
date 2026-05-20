@@ -6,16 +6,17 @@ import { Link } from 'react-router-dom';
 export default function Corporate() {
   return (
     <>
-      <section className="pt-32 pb-20 lg:pt-48 lg:pb-32 bg-slate-900 text-white overflow-hidden relative">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-20" referrerPolicy="no-referrer"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent"></div>
+      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-es-light via-white to-primary-50 opacity-90 z-0"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-es-primary/10 rounded-full blur-[100px] z-0"></div>
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary-200/30 rounded-full blur-[100px] z-0"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
             <motion.div 
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-500/20 text-primary-300 border border-primary-500/30 text-sm font-medium mb-6"
+              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-100 text-primary-700 border border-primary-200 text-sm font-medium mb-6"
             >
               B2B & Corporate
             </motion.div>
@@ -23,15 +24,15 @@ export default function Corporate() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight"
+              className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight"
             >
-              Capacite sua equipe para o <span className="text-primary-400">mercado global.</span>
+              Capacite sua equipe para o <span className="text-primary-600">mercado global.</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-lg md:text-xl text-slate-300 font-inter mb-10"
+              className="text-lg md:text-xl text-slate-600 font-inter mb-10"
             >
               Soluções in-company personalizadas para empresas que buscam excelência na comunicação internacional.
             </motion.p>

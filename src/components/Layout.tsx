@@ -84,18 +84,17 @@ const Navbar = () => {
           <motion.div 
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="hidden md:flex items-center gap-4"
+            className="hidden md:flex items-center"
           >
-            <Link to="/contato" className="text-sm font-medium text-slate-900 hover:text-primary-600 transition-colors">Entrar</Link>
-            <Link to="/contato">
+            <a href="https://wa.me/5551999474150" target="_blank" rel="noopener noreferrer">
               <motion.button 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all shadow-lg shadow-slate-900/20 flex items-center gap-2"
               >
-                Fale com um consultor
+                Fale Conosco
               </motion.button>
-            </Link>
+            </a>
           </motion.div>
 
           <button className="md:hidden text-slate-900" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -123,12 +122,12 @@ const Navbar = () => {
                 </Link>
               ))}
               <div className="h-px bg-slate-100 my-2"></div>
-              <Link to="/contato">
+              <a href="https://wa.me/5551999474150" target="_blank" rel="noopener noreferrer">
                 <button className="bg-primary-600 text-white px-5 py-3.5 rounded-xl text-base font-medium w-full flex items-center justify-center gap-2">
                   <MessageCircle className="w-5 h-5" />
-                  Fale com um consultor
+                  Fale Conosco
                 </button>
-              </Link>
+              </a>
             </div>
           </motion.div>
         )}
@@ -175,9 +174,9 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-slate-900 mb-4 flex items-center gap-2"><MessageCircle className="w-4 h-4 text-primary-500"/> Contato</h4>
             <ul className="space-y-3 text-sm text-slate-600 font-inter">
-              <li className="flex items-center gap-2"><a href="mailto:contato@blueskyidiomas.com.br" className="hover:text-primary-600 transition-colors">contato@blueskyidiomas.com.br</a></li>
-              <li className="flex items-center gap-2"><a href="tel:+5511999999999" className="hover:text-primary-600 transition-colors">(11) 99999-9999</a></li>
-              <li className="flex items-center gap-2">Porto Alegre, RS</li>
+              <li className="flex items-center gap-2"><a href="mailto:faleconosco@blueskyidiomas.com.br" className="hover:text-primary-600 transition-colors">faleconosco@blueskyidiomas.com.br</a></li>
+              <li className="flex items-center gap-2"><a href="tel:+5551999474150" className="hover:text-primary-600 transition-colors">(51) 99947-4150</a></li>
+              <li className="flex items-center gap-2">Atendimento Online • Brasil</li>
             </ul>
           </div>
         </div>

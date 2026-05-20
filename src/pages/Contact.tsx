@@ -4,8 +4,11 @@ import { MapPin, Phone, Mail, MessageCircle, Clock } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <div className="pt-32 pb-24 bg-slate-50 min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="relative pt-32 pb-24 bg-white min-h-screen overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-white via-primary-50 to-en-light opacity-90 z-0"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary-200/40 rounded-full blur-[100px] z-0"></div>
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-en-primary/10 rounded-full blur-[100px] z-0"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
@@ -35,8 +38,8 @@ export default function Contact() {
               <Phone className="w-6 h-6" />
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">Telefone</h3>
-            <p className="text-slate-600 font-inter mb-4">Segunda a Sexta, 8h às 20h<br/>Sábados, 8h às 14h</p>
-            <a href="tel:+5511999999999" className="text-primary-600 font-bold hover:underline mt-auto">(11) 99999-9999</a>
+            <p className="text-slate-600 font-inter mb-4">Segunda a Sexta, 8h às 22h<br/></p>
+            <a href="tel:+5511999999999" className="text-primary-600 font-bold hover:underline mt-auto">(51) 99947-4150</a>
           </motion.div>
 
           <motion.div 
@@ -50,7 +53,7 @@ export default function Contact() {
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">E-mail</h3>
             <p className="text-slate-600 font-inter mb-4">Envie suas dúvidas a qualquer momento. Respondemos em até 24h.</p>
-            <a href="mailto:contato@blueskyidiomas.com.br" className="text-primary-600 font-bold hover:underline mt-auto">contato@blueskyidiomas.com.br</a>
+            <a href="mailto:faleconosco@blueskyidiomas.com.br" className="text-primary-600 font-bold hover:underline mt-auto">faleconosco@blueskyidiomas.com.br</a>
           </motion.div>
 
           <motion.div 
@@ -62,8 +65,8 @@ export default function Contact() {
             <div className="w-14 h-14 bg-primary-50 rounded-full flex items-center justify-center text-primary-600 mb-6">
               <MapPin className="w-6 h-6" />
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Unidade Central</h3>
-            <p className="text-slate-600 font-inter mb-4">Av. Paulista, 1000 - Bela Vista<br/>São Paulo - SP, 01310-100</p>
+            <h3 className="text-xl font-bold text-slate-900 mb-2">Localização</h3>
+            <p className="text-slate-600 font-inter mb-4">Porto Alegre - Rio Grande do Sul</p>
             <a href="#" className="text-primary-600 font-bold hover:underline mt-auto">Ver no mapa</a>
           </motion.div>
         </div>
@@ -113,7 +116,7 @@ export default function Contact() {
                 <p className="text-slate-300 font-inter mb-8">
                   Prefere um atendimento mais rápido? Chame nossa equipe diretamente no WhatsApp.
                 </p>
-                <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold transition-colors w-full sm:w-auto">
+                <a href="https://wa.me/5551999474150" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold transition-colors w-full sm:w-auto">
                   <MessageCircle className="w-5 h-5" />
                   Chamar no WhatsApp
                 </a>

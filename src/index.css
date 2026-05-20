@@ -15,6 +15,27 @@
   
   --color-accent-400: #e8bc4a;
   --color-accent-500: #dfa928;
+
+  /* Language Theme Colors */
+  --color-en-primary: #1e3a8a;
+  --color-en-secondary: #dc2626;
+  --color-en-light: #eff6ff;
+
+  --color-es-primary: #dc2626;
+  --color-es-secondary: #eab308;
+  --color-es-light: #fef2f2;
+
+  --color-zh-primary: #ef4444;
+  --color-zh-secondary: #f59e0b;
+  --color-zh-light: #fff1f2;
+
+  --color-de-primary: #171717;
+  --color-de-secondary: #eab308;
+  --color-de-light: #fafafa;
+
+  --color-fr-primary: #2563eb;
+  --color-fr-secondary: #ef4444;
+  --color-fr-light: #eff6ff;
 }
 
 @layer base {

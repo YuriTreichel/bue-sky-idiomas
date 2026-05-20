@@ -7,8 +7,11 @@ import { CTA } from './Home';
 export default function Methodology() {
   return (
     <>
-      <section className="pt-32 pb-20 lg:pt-48 lg:pb-32 bg-slate-50 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-accent-50 opacity-90 z-0"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-primary-200/40 rounded-full blur-[100px] z-0"></div>
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent-200/30 rounded-full blur-[100px] z-0"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <motion.div 
               initial={{ opacity: 0, scale: 0.9 }}
@@ -31,7 +34,7 @@ export default function Methodology() {
               transition={{ delay: 0.2 }}
               className="text-lg md:text-xl text-slate-600 font-inter leading-relaxed"
             >
-              Há mais de 25 anos no mercado porto-alegrense, a Blue Sky Escola de Idiomas oferece um ensino de alta qualidade, adequado ao perfil, estilo e necessidades de cada aluno.
+              Há mais de 25 anos no mercado, a Blue Sky Escola de Idiomas oferece um ensino de alta qualidade. Atendemos desde crianças a adultos, estudantes e profissionais, respeitando sempre os objetivos individuais de cada um.
             </motion.p>
           </div>
         </div>
@@ -49,8 +52,8 @@ export default function Methodology() {
             >
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary-100 rounded-full blur-2xl -z-10 opacity-60"></div>
               <img 
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt="Blue Sky Idiomas History" 
+                src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                alt="Sevilha, Espanha (Espanhol)" 
                 className="rounded-3xl shadow-2xl relative z-10"
                 referrerPolicy="no-referrer"
               />
@@ -66,7 +69,7 @@ export default function Methodology() {
                   Organizada em 1998 pelas professoras <strong className="text-slate-900">Daline Schramm Adamy e Renata C. S. Bonotto</strong>, a Blue Sky nasceu com a proposta de oferecer um ensino personalizado e eficaz.
                 </p>
                 <p>
-                  Ao longo dessas décadas, temos crescido e nos fortalecido, aprimorando constantemente nossas técnicas para propiciar uma aprendizagem duradoura. Atendemos desde jovens a adultos, estudantes e profissionais, respeitando sempre os objetivos individuais de cada um.
+                  Ao longo dessas décadas, temos crescido e nos fortalecido, aprimorando constantemente nossas técnicas para propiciar uma aprendizagem duradoura.
                 </p>
                 <div className="flex flex-wrap gap-3 pt-4">
                   {['Online Individual', 'Em Duplas', 'Pequenos Grupos', 'In Company', 'Presencial a Domicílio'].map(tag => (
@@ -116,8 +119,8 @@ export default function Methodology() {
               className="order-1 lg:order-2"
             >
               <img 
-                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt="Aulas Dinâmicas" 
+                src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                alt="Pequim, China (Mandarim)" 
                 className="rounded-3xl shadow-2xl"
                 referrerPolicy="no-referrer"
               />

@@ -7,7 +7,7 @@ const professors = [
   {
     name: 'Daline Schramm Adamy',
     role: 'Diretora e Professora de Inglês',
-    image: 'https://www.blueskyidiomas.com.br/wp-content/uploads/sites/218/2024/06/WhatsApp-Image-2022-12-05-at-19.45.15-300x300.jpeg',
+    image: `${import.meta.env.BASE_URL}images/professores/daline.jpeg`,
     bio: 'Especialista em Ensino de Língua Inglesa com mais de 25 anos de experiência. Tradutora, intérprete e palestrante sobre Estilos de Aprendizagem.',
     language: 'Inglês',
     flag: 'https://flagcdn.com/us.svg',
@@ -15,7 +15,7 @@ const professors = [
   {
     name: 'Charles Teilor Rodrigues',
     role: 'Professor de Inglês',
-    image: 'https://www.blueskyidiomas.com.br/wp-content/uploads/sites/218/2018/08/Charles-300x300.jpg',
+    image: `${import.meta.env.BASE_URL}images/professores/charles.jpeg`,
     bio: 'Graduado e Mestre pela UFRGS. Realizou diversos intercâmbios nos EUA (Missouri State, Nebraska Omaha e St. Johns University).',
     language: 'Inglês',
     flag: 'https://flagcdn.com/us.svg',
@@ -23,7 +23,7 @@ const professors = [
   {
     name: 'Maria Luciana S. Bensley',
     role: 'Professora de Inglês',
-    image: 'https://www.blueskyidiomas.com.br/wp-content/uploads/sites/218/2018/01/Luciana-2-1-300x300.jpg',
+    image: `${import.meta.env.BASE_URL}images/professores/luciana.jpeg`,
     bio: 'Especialista em exames (TOEFL, TOEIC, IELTS). Vivência no Egito (British Council) e Austrália, trazendo visão multicultural ao aprendizado.',
     language: 'Inglês',
     flag: 'https://flagcdn.com/us.svg',
@@ -39,8 +39,8 @@ const professors = [
   {
     name: 'Walter Fuentes Robella',
     role: 'Professor de Espanhol',
-    image: 'https://www.blueskyidiomas.com.br/wp-content/uploads/sites/218/2018/01/Walter-2-1030x1030.jpg',
-    bio: 'Natural de Montevideo, Uruguai. Engenheiro de Sistemas com ampla experiência internacional e no ensino de espanhol e inglês.',
+    image: `${import.meta.env.BASE_URL}images/professores/walter.jpeg`,
+    bio: 'Natural de Montevideo, Uruguai. Engenheiro de Sistemas com ampla experiência internacional e no ensino de espanhol.',
     language: 'Espanhol',
     flag: 'https://flagcdn.com/es.svg',
   },
@@ -51,6 +51,14 @@ const professors = [
     bio: 'Mestra em Artes Cênicas e Jornalista. Tradutora francês-português com forte vínculo cultural e gastronômico com a França.',
     language: 'Francês',
     flag: 'https://flagcdn.com/fr.svg',
+  },
+  {
+    name: 'Rouâ Liscano',
+    role: 'Professor de Inglês',
+    image: `${import.meta.env.BASE_URL}images/professores/roua.jpeg`,
+    bio: 'Especialista no ensino da Língua Inglesa, formado como Tradutor & Intérprete de Inglês/Português. Residiu no exterior por 3 anos e meio, onde adquiriu certificação pela Cambridge English Language Assessment.',
+    language: 'Inglês',
+    flag: 'https://flagcdn.com/us.svg',
   },
 ];
 

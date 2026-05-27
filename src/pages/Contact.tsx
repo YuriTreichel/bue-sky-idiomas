@@ -94,7 +94,7 @@ export default function Contact() {
                   <label className="block text-sm font-medium text-slate-700 mb-2">Assunto</label>
                   <select className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-white">
                     <option>Informações sobre cursos</option>
-                    <option>Agendar aula experimental</option>
+                    <option>Agendar Matrícula</option>
                     <option>Dúvidas financeiras</option>
                     <option>Trabalhe conosco</option>
                     <option>Outros</option>
@@ -126,9 +126,7 @@ export default function Contact() {
                     <Clock className="w-6 h-6 text-primary-400 shrink-0" />
                     <div>
                       <h4 className="font-bold mb-1">Horário de Funcionamento</h4>
-                      <p className="text-sm text-slate-400">Segunda a Sexta: 08:00 - 20:00</p>
-                      <p className="text-sm text-slate-400">Sábado: 08:00 - 14:00</p>
-                      <p className="text-sm text-slate-400">Domingo: Fechado</p>
+                      <p className="text-sm text-slate-400">Segunda a Sexta: 08:00 - 22:00</p>
                     </div>
                   </div>
                 </div>

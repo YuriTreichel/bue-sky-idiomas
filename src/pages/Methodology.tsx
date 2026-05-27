@@ -52,8 +52,8 @@ export default function Methodology() {
             >
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary-100 rounded-full blur-2xl -z-10 opacity-60"></div>
               <img 
-                src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt="Sevilha, Espanha (Espanhol)" 
+                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                alt="Aluno estudando online com notebook e fones de ouvido" 
                 className="rounded-3xl shadow-2xl relative z-10"
                 referrerPolicy="no-referrer"
               />
@@ -119,8 +119,8 @@ export default function Methodology() {
               className="order-1 lg:order-2"
             >
               <img 
-                src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt="Pequim, China (Mandarim)" 
+                src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                alt="Estudante escrevendo anotações ao lado de um notebook" 
                 className="rounded-3xl shadow-2xl"
                 referrerPolicy="no-referrer"
               />

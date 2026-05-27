@@ -61,7 +61,7 @@ const Hero = () => {
             >
               {[
                 { name: 'Inglês', class: 'bg-en-primary/10 text-en-primary border-en-primary/20 hover:bg-en-primary hover:text-white' },
-                { name: 'Espanhol', class: 'bg-es-primary/10 text-es-primary border-es-primary/20 hover:bg-es-primary hover:text-white' },
+                { name: 'Espanhol', class: 'bg-amber-500/10 text-amber-700 border-amber-500/20 hover:bg-amber-500 hover:text-white' },
                 { name: 'Mandarim', class: 'bg-zh-primary/10 text-zh-primary border-zh-primary/20 hover:bg-zh-primary hover:text-white' },
                 { name: 'Alemão', class: 'bg-de-primary/10 text-de-primary border-de-primary/20 hover:bg-de-primary hover:text-white' },
                 { name: 'Francês', class: 'bg-fr-primary/10 text-fr-primary border-fr-primary/20 hover:bg-fr-primary hover:text-white' },
@@ -77,7 +77,7 @@ const Hero = () => {
 
             <h1 className="text-5xl lg:text-7xl font-extrabold text-slate-900 leading-[1.1] mb-6 tracking-tight">
               O mundo fala. <br/>
-              <span className="bg-gradient-to-r from-en-primary via-es-primary to-zh-primary bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-en-primary via-es-secondary to-zh-primary bg-clip-text text-transparent">
                 Você responde.
               </span>
             </h1>
@@ -432,7 +432,7 @@ const Features = () => {
                 transition={{ type: "spring", stiffness: 300 }}
                 className="overflow-hidden rounded-3xl shadow-lg border border-slate-100"
               >
-                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Paris, França (Francês)" className="object-cover h-64 w-full hover:scale-110 transition-transform duration-700" referrerPolicy="no-referrer" />
+                <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Aluna estudando online (Inglês)" className="object-cover h-64 w-full hover:scale-110 transition-transform duration-700" referrerPolicy="no-referrer" />
               </motion.div>
               <motion.div 
                 whileHover={{ scale: 1.03 }}
@@ -456,7 +456,7 @@ const Features = () => {
                 transition={{ type: "spring", stiffness: 300 }}
                 className="overflow-hidden rounded-3xl shadow-lg border border-slate-100"
               >
-                <img src="https://images.unsplash.com/photo-1599946347371-68eb71b16afc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Berlim, Alemanha (Alemão)" className="object-cover h-64 w-full hover:scale-110 transition-transform duration-700" referrerPolicy="no-referrer" />
+                <img src="https://images.unsplash.com/photo-1610484826967-09c5720778c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Aluno estudando online (E-learning)" className="object-cover h-64 w-full hover:scale-110 transition-transform duration-700" referrerPolicy="no-referrer" />
               </motion.div>
             </div>
           </div>

@@ -27,47 +27,40 @@ export default function Contact() {
           </motion.p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-16 max-w-4xl mx-auto mb-16 pt-8">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col items-center text-center"
+            className="bg-white p-8 pt-12 rounded-3xl shadow-sm border border-slate-100 flex flex-col items-center text-center relative"
           >
-            <div className="w-14 h-14 bg-primary-50 rounded-full flex items-center justify-center text-primary-600 mb-6">
-              <Phone className="w-6 h-6" />
+            <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 bg-primary-700 rounded-full flex items-center justify-center text-white shadow-md">
+              <Mail className="w-6 h-6" />
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Telefone</h3>
-            <p className="text-slate-600 font-inter mb-4">Segunda a Sexta, 8h às 22h<br/></p>
-            <a href="tel:+5511999999999" className="text-primary-600 font-bold hover:underline mt-auto">(51) 99947-4150</a>
+            <h3 className="text-sm font-semibold tracking-widest text-slate-500 uppercase mb-4">MATRIZ</h3>
+            <a href="tel:+5551999474150" className="text-2xl md:text-3xl font-bold text-slate-800 hover:text-primary-600 transition-colors mb-4">(51) 99947.4150</a>
+            <p className="text-slate-500 font-inter text-sm mb-1">Envie-nos um e-mail:</p>
+            <a href="mailto:faleconosco@blueskyidiomas.com.br" className="text-slate-600 hover:text-primary-600 transition-colors font-medium">faleconosco@blueskyidiomas.com.br</a>
           </motion.div>
 
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col items-center text-center"
+            className="bg-white p-8 pt-12 rounded-3xl shadow-sm border border-slate-100 flex flex-col items-center text-center relative"
           >
-            <div className="w-14 h-14 bg-primary-50 rounded-full flex items-center justify-center text-primary-600 mb-6">
+            <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 bg-primary-700 rounded-full flex items-center justify-center text-white shadow-md">
               <Mail className="w-6 h-6" />
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">E-mail</h3>
-            <p className="text-slate-600 font-inter mb-4">Envie suas dúvidas a qualquer momento. Respondemos em até 24h.</p>
-            <a href="mailto:faleconosco@blueskyidiomas.com.br" className="text-primary-600 font-bold hover:underline mt-auto">faleconosco@blueskyidiomas.com.br</a>
-          </motion.div>
-
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col items-center text-center"
-          >
-            <div className="w-14 h-14 bg-primary-50 rounded-full flex items-center justify-center text-primary-600 mb-6">
-              <MapPin className="w-6 h-6" />
+            <h3 className="text-sm font-semibold tracking-widest text-slate-500 uppercase mb-4">FILIAL</h3>
+            <div className="flex flex-col gap-1 mb-4">
+              <a href="tel:+555433581606" className="text-2xl md:text-3xl font-bold text-slate-800 hover:text-primary-600 transition-colors">(54) 3358.1606</a>
+              <a href="tel:+5554999862061" className="text-2xl md:text-3xl font-bold text-slate-800 hover:text-primary-600 transition-colors">(54) 99986.2061</a>
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Localização</h3>
-            <p className="text-slate-600 font-inter mb-4">Porto Alegre - Rio Grande do Sul</p>
-            <a href="#" className="text-primary-600 font-bold hover:underline mt-auto">Ver no mapa</a>
+            <p className="text-slate-600 font-inter text-sm leading-relaxed">
+              Rua Borges de Medeiros, 700<br />
+              Bairro Centro – Lagoa Vermelha/RS
+            </p>
           </motion.div>
         </div>
 

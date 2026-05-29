@@ -371,7 +371,7 @@ export default function Partnerships() {
                     </span>
 
                     <img
-                      src={partner.logo}
+                      src={`${import.meta.env.BASE_URL}${partner.logo.startsWith('/') ? partner.logo.slice(1) : partner.logo}`}
                       alt={`Logo da ${partner.name}`}
                       className="max-h-24 max-w-[80%] object-contain filter drop-shadow-sm group-hover:scale-105 transition-transform duration-300"
                       onError={(e) => {

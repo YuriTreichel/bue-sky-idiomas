@@ -65,7 +65,7 @@ export default function Corporate() {
             {[
               { icon: <Building2 />, title: 'In-Company ou Online', desc: 'Aulas na sua empresa ou em plataforma virtual ao vivo, adaptando-se à rotina da equipe.' },
               { icon: <TrendingUp />, title: 'Foco no seu nicho', desc: 'Vocabulário específico para sua área de atuação (TI, Finanças, Vendas, etc).' },
-              { icon: <Users />, title: 'Relatórios de Desempenho', desc: 'Acompanhamento mensal do RH com métricas de evolução e frequência de cada colaborador.' },
+              { icon: <Users />, title: 'Relatórios de Desempenho', desc: 'Acompanhamento periódico com métricas de evolução e frequência de cada colaborador.' },
               { icon: <Globe2 />, title: 'Preparação Executiva', desc: 'Treinamento focado em apresentações, negociações e reuniões internacionais.' }
             ].map((item, idx) => (
               <motion.div 

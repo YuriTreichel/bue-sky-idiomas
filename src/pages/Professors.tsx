@@ -53,7 +53,7 @@ const professors = [
     flag: 'https://flagcdn.com/fr.svg',
   },
   {
-    name: 'Rouâ Liscano',
+    name: 'Rouã Liscano',
     role: 'Professor de Inglês',
     image: `${import.meta.env.BASE_URL}images/professores/roua.jpeg`,
     bio: 'Especialista no ensino da Língua Inglesa, formado como Tradutor & Intérprete de Inglês/Português. Residiu no exterior por 3 anos e meio, onde adquiriu certificação pela Cambridge English Language Assessment.',
@@ -147,7 +147,7 @@ export default function Professors() {
             <div className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100">
               <Award className="w-12 h-12 text-primary-600 mb-6" />
               <h4 className="text-xl font-bold text-slate-900 mb-4">Certificação Constante</h4>
-              <p className="text-slate-600 font-inter">Nossa equipe passa por treinamentos mensais sobre as mais novas metodologias de ensino global.</p>
+              <p className="text-slate-600 font-inter">Nossa equipe passa por treinamentos periódicos sobre as mais novas metodologias de ensino global.</p>
             </div>
             <div className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100">
               <BookOpen className="w-12 h-12 text-primary-600 mb-6" />

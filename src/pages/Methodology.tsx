@@ -1,10 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Target, Users, BookOpen, MessageCircle, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { Target, Users, BookOpen, MessageCircle, ArrowRight, CheckCircle2, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { CTA } from './Home';
 
+const services = [
+  {
+    title: 'Aulas de Conversação',
+    description: 'Aprimore sua fluência e confiança com discussões dinâmicas sobre temas atuais, simulações do cotidiano e correções personalizadas de pronúncia e vocabulário.'
+  },
+  {
+    title: 'Preparação TOEFL/IELTS',
+    description: 'Treinamento focado nas quatro seções do exame (Reading, Listening, Speaking e Writing) com simulados reais, estratégias de tempo e feedback detalhado.'
+  },
+  {
+    title: 'Mestrado e Doutorado',
+    description: 'Preparação específica para exames de proficiência exigidos por programas acadêmicos de pós-graduação, com foco em leitura instrumental e interpretação de textos acadêmicos.'
+  },
+  {
+    title: 'Cursos para Viagens',
+    description: 'Vocabulário prático e situações cotidianas de viagem (aeroporto, hotel, restaurantes, compras e direções) para que você se comunique com autonomia no exterior.'
+  },
+  {
+    title: 'Traduções e Versões',
+    description: 'Serviços profissionais de tradução de documentos, artigos científicos e materiais corporativos, garantindo precisão terminológica e adequação cultural.'
+  },
+  {
+    title: 'Reforço Escolar',
+    description: 'Acompanhamento personalizado para estudantes do ensino fundamental e médio, auxiliando na compreensão da gramática, realização de tarefas e preparação para provas escolares.'
+  }
+];
+
 export default function Methodology() {
+  const [openService, setOpenService] = useState<string | null>(null);
+
   return (
     <>
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-white overflow-hidden">
@@ -71,12 +100,27 @@ export default function Methodology() {
                 <p>
                   Ao longo dessas décadas, temos crescido e nos fortalecido, aprimorando constantemente nossas técnicas para propiciar uma aprendizagem duradoura.
                 </p>
-                <div className="flex flex-wrap gap-3 pt-4">
-                  {['Online Individual', 'Em Duplas', 'Pequenos Grupos', 'In Company', 'Presencial a Domicílio'].map(tag => (
-                    <span key={tag} className="px-4 py-2 bg-slate-50 border border-slate-100 rounded-full text-sm font-medium text-slate-700">
-                      {tag}
-                    </span>
-                  ))}
+                <div className="space-y-4 pt-4">
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                    <span className="text-xs font-bold text-slate-400 uppercase tracking-widest sm:w-24 shrink-0">On-line</span>
+                    <div className="flex flex-wrap gap-2">
+                      {['Individual', 'Duplas', 'Pequenos Grupos'].map(tag => (
+                        <span key={tag} className="px-4 py-2 bg-primary-50/60 border border-primary-100/50 rounded-full text-sm font-medium text-primary-700">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                    <span className="text-xs font-bold text-slate-400 uppercase tracking-widest sm:w-24 shrink-0">Presencial</span>
+                    <div className="flex flex-wrap gap-2">
+                      {['In Company', 'A Domicílio'].map(tag => (
+                        <span key={tag} className="px-4 py-2 bg-slate-50 border border-slate-100 rounded-full text-sm font-medium text-slate-700">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -97,19 +141,38 @@ export default function Methodology() {
                 Adotamos uma abordagem definida a partir do perfil do aluno. Integramos as quatro habilidades — produção oral, compreensão auditiva, leitura e escrita — de modo prático e direcionado.
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
-                {[
-                  'Aulas de Conversação',
-                  'Preparação TOEFL/IELTS',
-                  'Mestrado e Doutorado',
-                  'Cursos para Viagens',
-                  'Traduções e Versões',
-                  'Reforço Escolar'
-                ].map((service) => (
-                  <div key={service} className="flex items-center gap-3 p-4 bg-primary-50 rounded-2xl border border-primary-100/50">
-                    <CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" />
-                    <span className="font-bold text-slate-800 text-sm">{service}</span>
-                  </div>
-                ))}
+                {services.map((service) => {
+                  const isOpen = openService === service.title;
+                  return (
+                    <div 
+                      key={service.title} 
+                      onClick={() => setOpenService(isOpen ? null : service.title)}
+                      className="flex flex-col p-4 bg-primary-50 rounded-2xl border border-primary-100/50 cursor-pointer select-none hover:bg-primary-100/30 transition-colors duration-200"
+                    >
+                      <div className="flex items-center justify-between gap-3">
+                        <div className="flex items-center gap-3">
+                          <CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" />
+                          <span className="font-bold text-slate-800 text-sm">{service.title}</span>
+                        </div>
+                        <ChevronDown className={`w-5 h-5 text-slate-400 transition-transform duration-300 ${isOpen ? 'rotate-180 text-primary-600' : ''}`} />
+                      </div>
+                      <motion.div
+                        initial={false}
+                        animate={{ 
+                          height: isOpen ? 'auto' : 0,
+                          opacity: isOpen ? 1 : 0,
+                          marginTop: isOpen ? 8 : 0
+                        }}
+                        transition={{ duration: 0.3, ease: 'easeInOut' }}
+                        className="overflow-hidden"
+                      >
+                        <p className="text-xs text-slate-600 leading-relaxed font-inter font-normal pl-8">
+                          {service.description}
+                        </p>
+                      </motion.div>
+                    </div>
+                  );
+                })}
               </div>
             </motion.div>
             <motion.div 

@@ -87,7 +87,7 @@ export default function Contact() {
                   <label className="block text-sm font-medium text-slate-700 mb-2">Assunto</label>
                   <select className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-white">
                     <option>Informações sobre cursos</option>
-                    <option>Agendar Matrícula</option>
+                    <option>Efetuar Matrícula</option>
                     <option>Dúvidas financeiras</option>
                     <option>Trabalhe conosco</option>
                     <option>Outros</option>

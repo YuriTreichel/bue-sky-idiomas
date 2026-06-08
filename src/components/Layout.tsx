@@ -199,7 +199,9 @@ export default function Layout() {
   // Scroll to top on route change
   const { pathname } = useLocation();
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (pathname !== '/cursos') {
+      window.scrollTo(0, 0);
+    }
   }, [pathname]);
 
   return (

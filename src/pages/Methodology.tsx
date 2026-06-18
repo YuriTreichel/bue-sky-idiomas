@@ -114,7 +114,7 @@ export default function Methodology() {
                   <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
                     <span className="text-xs font-bold text-slate-400 uppercase tracking-widest sm:w-24 shrink-0">Presencial</span>
                     <div className="flex flex-wrap gap-2">
-                      {['In Company', 'A Domicílio'].map(tag => (
+                      {['In Company'].map(tag => (
                         <span key={tag} className="px-4 py-2 bg-slate-50 border border-slate-100 rounded-full text-sm font-medium text-slate-700">
                           {tag}
                         </span>

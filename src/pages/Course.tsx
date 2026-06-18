@@ -17,7 +17,7 @@ const coursesData: Record<string, any> = {
     levels: ['Iniciante (A1-A2)', 'Intermediário (B1-B2)', 'Avançado (C1-C2)', 'Business English'],
     features: [
       'Foco em conversação desde o primeiro dia',
-      'Preparação para TOEFL e IELTS',
+      'Preparação para Exames Internacionais (TOEFL, IELTS, DELE…)',
       'Material didático atualizado anualmente',
       'Professores com vivência internacional'
     ],
@@ -192,7 +192,7 @@ export default function Course() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl font-bold text-slate-900 mb-8 flex items-center gap-3">
-                <BookOpen className={`w-8 h-8 ${course.iconColor}`} /> O que você vai aprender
+                <BookOpen className={`w-8 h-8 ${course.iconColor}`} /> Aqui Você Encontra
               </h2>
               <ul className="space-y-6">
                 {course.features.map((feature: string, idx: number) => (
@@ -275,7 +275,7 @@ export default function Course() {
                       Aulas Customizadas <span className="text-slate-500 text-lg block font-normal">(Individuais, Duplas ou Trios)</span>
                     </h3>
                     <p className="text-slate-600 font-inter leading-relaxed mb-6">
-                      Foco total nas necessidades do aluno (viagem, negócios, exames como TOEFL/IELTS, etc.). Customizadas por nível, interesse e disponibilidade.
+                      Foco total nas necessidades do aluno (viagem, negócios, exames internacionais, etc.). Customizadas por nível, interesse e disponibilidade.
                     </p>
                     <Link to="/contato">
                       <button className="w-full bg-en-primary hover:bg-en-secondary text-white font-semibold py-3 px-6 rounded-xl transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 cursor-pointer">
@@ -288,29 +288,28 @@ export default function Course() {
                     <table className="w-full border-collapse text-left">
                       <thead>
                         <tr className="border-b border-slate-100">
-                          <th className="py-4 px-4 font-bold text-slate-800">Valores Hora/Aula (por pessoa)</th>
-                          <th className="py-4 px-4 font-bold text-en-primary bg-blue-50/50 rounded-t-xl text-center">Online</th>
-                          <th className="py-4 px-4 font-bold text-en-secondary bg-red-50/50 rounded-t-xl text-center">Presencial</th>
+                          <th className="py-4 px-4 font-bold text-slate-800">Valores Hora/Aula</th>
+                          <th className="py-4 px-4 font-bold text-en-primary bg-blue-50/50 rounded-t-xl text-center">Valor Hora/Aula (On-line)</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr className="border-b border-slate-100 hover:bg-slate-50/50 transition-colors">
                           <td className="py-5 px-4 font-semibold text-slate-800">Individual</td>
-                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-blue-50/30">R$ 95,00</td>
-                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-red-50/30">R$ 180,00</td>
+                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-blue-50/30">R$ 100,00</td>
                         </tr>
                         <tr className="border-b border-slate-100 hover:bg-slate-50/50 transition-colors">
                           <td className="py-5 px-4 font-semibold text-slate-800">Em Dupla</td>
-                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-blue-50/30">R$ 75,00</td>
-                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-red-50/30">R$ 130,00</td>
+                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-blue-50/30">R$ 80,00*</td>
                         </tr>
                         <tr className="hover:bg-slate-50/50 transition-colors">
                           <td className="py-5 px-4 font-semibold text-slate-800">Em Trio</td>
-                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-blue-50/30">R$ 60,00</td>
-                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-red-50/30">R$ 100,00</td>
+                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-blue-50/30">R$ 65,00*</td>
                         </tr>
                       </tbody>
                     </table>
+                    <div className="text-xs text-slate-500 mt-4 font-inter text-right">
+                      *Valor por aluno
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -535,7 +534,7 @@ export default function Course() {
                       Aulas Customizadas <span className="text-slate-500 text-lg block font-normal">(Individuais, Duplas ou Trios)</span>
                     </h3>
                     <p className="text-slate-600 font-inter leading-relaxed mb-6">
-                      Foco total nas necessidades do aluno (viagem, negócios, exames como D.E.L.E / Siele, reforço escolar, etc.). Customizadas por nível, interesse e disponibilidade.
+                      Foco total nas necessidades do aluno (viagem, negócios, exames internacionais, etc.). Customizadas por nível, interesse e disponibilidade.
                     </p>
                     <Link to="/contato">
                       <button className="w-full bg-es-primary hover:bg-es-secondary text-white font-semibold py-3 px-6 rounded-xl transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 cursor-pointer">
@@ -548,29 +547,28 @@ export default function Course() {
                     <table className="w-full border-collapse text-left">
                       <thead>
                         <tr className="border-b border-slate-100">
-                          <th className="py-4 px-4 font-bold text-slate-800">Valores Hora/Aula (por pessoa)</th>
-                          <th className="py-4 px-4 font-bold text-es-primary bg-red-50/50 rounded-t-xl text-center">Online</th>
-                          <th className="py-4 px-4 font-bold text-es-secondary bg-yellow-50/50 rounded-t-xl text-center">Fora da escola</th>
+                          <th className="py-4 px-4 font-bold text-slate-800">Valores Hora/Aula</th>
+                          <th className="py-4 px-4 font-bold text-es-primary bg-red-50/50 rounded-t-xl text-center">Valor Hora/Aula (On-line)</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr className="border-b border-slate-100 hover:bg-slate-50/50 transition-colors">
                           <td className="py-5 px-4 font-semibold text-slate-800">Individual</td>
-                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-red-50/30">R$ 95,00</td>
-                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-yellow-50/30">R$ 180,00</td>
+                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-red-50/30">R$ 100,00</td>
                         </tr>
                         <tr className="border-b border-slate-100 hover:bg-slate-50/50 transition-colors">
                           <td className="py-5 px-4 font-semibold text-slate-800">Em Dupla</td>
-                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-red-50/30">R$ 75,00</td>
-                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-yellow-50/30">R$ 130,00</td>
+                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-red-50/30">R$ 80,00*</td>
                         </tr>
                         <tr className="hover:bg-slate-50/50 transition-colors">
                           <td className="py-5 px-4 font-semibold text-slate-800">Em Trio</td>
-                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-red-50/30">R$ 60,00</td>
-                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-yellow-50/30">R$ 100,00</td>
+                          <td className="py-5 px-4 text-center font-bold text-slate-900 bg-red-50/30">R$ 65,00*</td>
                         </tr>
                       </tbody>
                     </table>
+                    <div className="text-xs text-slate-500 mt-4 font-inter text-right">
+                      *Valor por aluno
+                    </div>
                   </div>
                 </div>
               </motion.div>

@@ -29,10 +29,26 @@ const professors = [
     flag: 'https://flagcdn.com/us.svg',
   },
   {
+    name: 'Rouã Liscano',
+    role: 'Professor de Inglês',
+    image: `${import.meta.env.BASE_URL}images/professores/roua.jpeg`,
+    bio: 'Especialista no ensino da Língua Inglesa, formado como Tradutor & Intérprete de Inglês/Português. Residiu no exterior por 3 anos e meio, onde adquiriu certificação pela Cambridge English Language Assessment.',
+    language: 'Inglês',
+    flag: 'https://flagcdn.com/us.svg',
+  },
+  {
     name: 'Ju Miao',
     role: 'Professora de Mandarim',
-    image: 'https://www.blueskyidiomas.com.br/wp-content/uploads/sites/218/2021/08/e49d60a2-81f9-4117-9289-d2ca6b5b13a6-300x300.jpg',
+    image: `${import.meta.env.BASE_URL}images/professores/ju-miao.jpg`,
     bio: 'Natural de Taiwan. Graduada em Administração, possui mais de 15 anos de experiência no ensino de Mandarim e tradução.',
+    language: 'Mandarim',
+    flag: 'https://flagcdn.com/cn.svg',
+  },
+  {
+    name: 'Erica Hsu Ken Yi',
+    role: 'Professora de Mandarim',
+    image: `${import.meta.env.BASE_URL}images/professores/erica.jpeg`,
+    bio: 'Formada em Letras Português-Inglês pela PUC-PR, Título de Mestre em Linguística pela UFPR. Atua como professora de Mandarim há mais de 10 anos e já efetuou trabalhos como intérprete em empresas exportadoras.',
     language: 'Mandarim',
     flag: 'https://flagcdn.com/cn.svg',
   },
@@ -47,18 +63,10 @@ const professors = [
   {
     name: 'Helena Mello',
     role: 'Professora de Francês',
-    image: 'https://www.blueskyidiomas.com.br/wp-content/uploads/sites/218/2018/06/32e726f8-1cbb-4f79-b84f-cdd938e452c8-300x300.jpg',
+    image: `${import.meta.env.BASE_URL}images/professores/helena.jpg`,
     bio: 'Mestra em Artes Cênicas e Jornalista. Tradutora francês-português com forte vínculo cultural e gastronômico com a França.',
     language: 'Francês',
     flag: 'https://flagcdn.com/fr.svg',
-  },
-  {
-    name: 'Rouã Liscano',
-    role: 'Professor de Inglês',
-    image: `${import.meta.env.BASE_URL}images/professores/roua.jpeg`,
-    bio: 'Especialista no ensino da Língua Inglesa, formado como Tradutor & Intérprete de Inglês/Português. Residiu no exterior por 3 anos e meio, onde adquiriu certificação pela Cambridge English Language Assessment.',
-    language: 'Inglês',
-    flag: 'https://flagcdn.com/us.svg',
   },
 ];
 
